@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Семейное древо</title>
+  <meta name="description" content="Найдём историю семьи в архивах и составим родословную книгу. Метрические книги, ревизские сказки, работа с архивами по всей России.">
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- ============ HEADER ============ -->
+  <header class="header header--sticky header--dark">
+    <div class="header__bar">
+      <div class="header__left">
+        <a class="header__logo" href="#top" aria-label="Семейное древо — на главную">
+          <img src="img/logo.svg" width="33" height="37" alt="">
+        </a>
+        <nav class="nav" aria-label="Основное меню">
+          <a href="#about">О нас</a>
+          <a href="#directions">Родословная книга</a>
+          <a href="#process">Исследование</a>
+        </nav>
+      </div>
+      <div class="header__right">
+        <a class="header__phone" href="tel:+71234566666">8 (123) 456-66-66</a>
+        <div class="header__socials">
+          <!-- иконки из формы обратной связи (icons/…/brand-telegram.svg, logo-vk.svg) + обводка кружком, всё в одном SVG -->
+          <a class="round-icon" href="#" aria-label="Telegram">
+            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+              <circle cx="22" cy="22" r="21.25" stroke="currentColor" stroke-width="1.5"/>
+              <path transform="translate(22 22) scale(.5) translate(-21.5 -21.5)" d="M26.9516 17.9674L19.7647 25.1543L30.545 35.9346L37.7319 7.18701L5.39087 19.7641L12.5778 23.3576L16.1712 34.1379L21.5614 26.951" stroke="currentColor" stroke-width="3.59345" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="round-icon" href="#" aria-label="ВКонтакте">
+            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+              <circle cx="22" cy="22" r="21.25" stroke="currentColor" stroke-width="1.5"/>
+              <path transform="translate(22 22) scale(.55) translate(-21.5 -21.5)" fill-rule="evenodd" clip-rule="evenodd" d="M40.8223 11.1172C41.1221 10.1672 40.8223 9.47655 39.4958 9.47655H35.0851C33.9726 9.47655 33.4588 10.0813 33.159 10.7281C33.159 10.7281 30.8901 16.253 27.7216 19.835C26.6941 20.8709 26.2233 21.2162 25.6666 21.2162C25.3668 21.2162 24.9811 20.8709 24.9811 19.9217V11.0725C24.9811 9.95072 24.6391 9.43275 23.6967 9.43275H16.7602C16.0746 9.43275 15.6468 9.95072 15.6468 10.4687C15.6468 11.5476 17.231 11.807 17.402 14.828V21.3922C17.402 22.8164 17.1493 23.0766 16.5884 23.0766C15.0901 23.0766 11.4509 17.5088 9.26785 11.1643C8.84338 9.90776 8.41216 9.43275 7.29875 9.43275H2.84596C1.56158 9.43275 1.34766 10.0366 1.34766 10.6843C1.34766 11.8499 2.84596 17.7193 8.32626 25.4879C11.9655 30.7939 17.1459 33.6456 21.8127 33.6456C24.6391 33.6456 24.9811 32.9979 24.9811 31.9191V27.9051C24.9811 26.6106 25.2379 26.395 26.1374 26.395C26.7792 26.395 27.9356 26.7394 30.5473 29.2863C33.5439 32.3073 34.0576 33.6886 35.7277 33.6886H40.1376C41.422 33.6886 42.0216 33.0409 41.6788 31.7894C41.2939 30.5378 39.8378 28.7254 37.9537 26.5676C36.9262 25.3599 35.385 24.0216 34.9142 23.3739C34.2724 22.5107 34.4434 22.1654 34.9142 21.3888C34.8712 21.3888 40.2664 13.7062 40.8223 11.1138" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__mobile">
+      <a class="header__pill" href="#top" aria-label="Семейное древо — на главную">
+        <img src="img/logo.svg" width="25" height="28" alt="">
+        <span>Семейное древо</span>
+      </a>
+      <div class="header__buttons">
+        <a class="icon-btn" href="tel:+71234566666" aria-label="Позвонить"><img src="img/icon-phone.svg" width="50" height="50" alt=""></a>
+        <button class="icon-btn header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu-1">
+          <img src="img/icon-menu.svg" width="50" height="50" alt="">
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu-1" hidden>
+      <nav class="mobile-menu__nav" aria-label="Мобильное меню">
+        <a href="#about">О нас</a>
+        <a href="#directions">Родословная книга</a>
+        <a href="#process">Исследование</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#blog">Блог</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a class="mobile-menu__phone" href="tel:+71234566666">8 (123) 456-66-66</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO (бегущая лента карточек) ============ -->
+    <section class="hero4" aria-label="Первый экран">
+      <div class="marquee">
+        <div class="marquee__track">
+          <article class="mcard mcard--green">
+            <h1 class="mcard__title">Мы возвращаем семьям их историю</h1>
+            <p class="mcard__text">Проводим генеалогические исследования по архивным документам и восстанавливаем родословную вашей семьи на 100+ лет. За именами и датами в архивах стоят реальные судьбы — мы помогаем их найти и сохранить.</p>
+          </article>
+          <figure class="mcard mcard--photo"><img src="img/strip-family.jpg" width="624" height="634" alt="Семья у дома, архивная фотография" loading="eager" decoding="async"></figure>
+          <article class="mcard mcard--red">
+            <p class="mcard__title">Подарок, который не забудется</p>
+            <p class="mcard__text">Родословная книга — не вещь, а история семьи, которую невозможно купить готовой. Мы оформляем найденное в родословную книгу с историческим контекстом и дизайном фамильного древа — подарок, который останется в семье на поколения, а не потеряется через месяц.</p>
+          </article>
+          <figure class="mcard mcard--photo"><img src="img/strip-elders.jpg" width="624" height="626" alt="Сельские жители у крыльца, архивная фотография" loading="eager" decoding="async"></figure>
+          <article class="mcard mcard--orange">
+            <p class="mcard__title">Десятки довольных клиентов по всей России</p>
+            <p class="mcard__text">С нами уже работали семьи из Москвы и регионов — и продолжают возвращаться с новыми запросами и рекомендовать нас близким. Ценим доверие и работаем так, чтобы каждый клиент остался доволен результатом.</p>
+          </article>
+          <figure class="mcard mcard--photo"><img src="img/strip-plough.jpg" width="632" height="634" alt="Крестьянин пашет поле на лошадях" loading="eager" decoding="async"></figure>
+          <!-- копия набора — для бесшовного круга -->
+          <article class="mcard mcard--green" aria-hidden="true">
+            <p class="mcard__title">Мы возвращаем семьям их историю</p>
+            <p class="mcard__text">Проводим генеалогические исследования по архивным документам и восстанавливаем родословную вашей семьи на 100+ лет. За именами и датами в архивах стоят реальные судьбы — мы помогаем их найти и сохранить.</p>
+          </article>
+          <figure class="mcard mcard--photo" aria-hidden="true"><img src="img/strip-family.jpg" width="624" height="634" alt="" loading="eager" decoding="async"></figure>
+          <article class="mcard mcard--red" aria-hidden="true">
+            <p class="mcard__title">Подарок, который не забудется</p>
+            <p class="mcard__text">Родословная книга — не вещь, а история семьи, которую невозможно купить готовой. Мы оформляем найденное в родословную книгу с историческим контекстом и дизайном фамильного древа — подарок, который останется в семье на поколения, а не потеряется через месяц.</p>
+          </article>
+          <figure class="mcard mcard--photo" aria-hidden="true"><img src="img/strip-elders.jpg" width="624" height="626" alt="" loading="eager" decoding="async"></figure>
+          <article class="mcard mcard--orange" aria-hidden="true">
+            <p class="mcard__title">Десятки довольных клиентов по всей России</p>
+            <p class="mcard__text">С нами уже работали семьи из Москвы и регионов — и продолжают возвращаться с новыми запросами и рекомендовать нас близким. Ценим доверие и работаем так, чтобы каждый клиент остался доволен результатом.</p>
+          </article>
+          <figure class="mcard mcard--photo" aria-hidden="true"><img src="img/strip-plough.jpg" width="632" height="634" alt="" loading="eager" decoding="async"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ НАПРАВЛЕНИЯ И УСЛУГИ ============ -->
+    <section class="directions container section" id="directions" aria-labelledby="directions-title">
+      <div class="section-head">
+        <h2 class="h2" id="directions-title">Направления и&nbsp;услуги</h2>
+        <p class="section-head__text">Проводим генеалогические исследования по&nbsp;архивным документам и&nbsp;оформляем результат в&nbsp;удобном для вас формате</p>
+      </div>
+
+      <div class="directions__list">
+        <article class="dcard">
+          <div class="dcard__body">
+            <div class="dcard__top">
+              <h3 class="dcard__title">Родословная книга</h3>
+              <p class="dcard__sub">генеалогический поиск + исследование + дизайн</p>
+              <ul class="tags dcard__tags">
+                <li class="tag">от 1 месяца</li>
+                <li class="tag">От 60 000 ₽</li>
+              </ul>
+            </div>
+            <div class="dcard__bottom">
+              <p class="dcard__desc dcard__desc--full">Семейная реликвия для детей и&nbsp;внуков. Проводим архивное исследование, находим документы о&nbsp;ваших предках и&nbsp;раскрываем их через исторический контекст&nbsp;— быт, судьбы, места проживания. Результат оформляем в&nbsp;родословную книгу с&nbsp;векторным древом для печати на&nbsp;холсте любого размера. Самый востребованный формат.</p>
+              <p class="dcard__desc dcard__desc--short">Семейная реликвия для детей и&nbsp;внуков. Проводим архивный поиск, находим документы о&nbsp;предках и&nbsp;раскрываем их через быт, судьбы, исторический контекст.</p>
+              <a class="btn dcard__btn" href="#contact">Узнать подробнее →</a>
+            </div>
+          </div>
+          <div class="dcard__media">
+            <img src="img/dir-book.jpg" width="464" height="500" alt="Страницы старинной книги крупным планом" loading="lazy">
+          </div>
+        </article>
+
+        <article class="dcard">
+          <div class="dcard__body">
+            <div class="dcard__top">
+              <h3 class="dcard__title">Архивный свиток</h3>
+              <p class="dcard__sub">генеалогический поиск</p>
+              <ul class="tags dcard__tags">
+                <li class="tag">от 1 месяца</li>
+                <li class="tag">От 30 000 ₽</li>
+              </ul>
+            </div>
+            <div class="dcard__bottom">
+              <p class="dcard__desc">Находим архивные документы о&nbsp;ваших предках и&nbsp;оформляем в&nbsp;подробный отчёт&nbsp;— фотокопии документов с&nbsp;расшифровкой и&nbsp;поколенная роспись.</p>
+              <a class="btn dcard__btn" href="#contact">Узнать подробнее →</a>
+            </div>
+          </div>
+          <div class="dcard__media dcard__media--archive">
+            <img src="img/dir-archive.jpg" width="464" height="500" alt="Стеллажи архивохранилища с номерами фондов" loading="lazy">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ О НАС / КАРТА ============ -->
+    <section class="about section" id="about">
+      <div class="about__intro">
+        <h2 class="h2 about__title">Находим предков. <br>Возвращаем историю</h2>
+        <div class="about__text">
+          <p>Мы занимаемся генеалогическими исследованиями и&nbsp;составлением родословных&nbsp;— работаем с&nbsp;архивами по&nbsp;всей России, находим метрические книги, ревизские сказки и&nbsp;другие архивные записи и&nbsp;превращаем их в&nbsp;понятную историю вашего рода.</p>
+          <p>Каждое исследование начинается с&nbsp;того немногого, что уже известно семье,&nbsp;— имени, примерной даты, места рождения&nbsp;— и&nbsp;разворачивается в&nbsp;цепочку архивных запросов и&nbsp;расшифровок. Мы работаем напрямую с&nbsp;архивами и&nbsp;ЗАГСами, сверяем найденные данные между собой и&nbsp;оформляем результат в&nbsp;родословную книгу с&nbsp;историческим контекстом.</p>
+          <p>Помимо этого мы устанавливаем родство документально для наследственных дел, судов и&nbsp;оформления гражданства по&nbsp;происхождению.</p>
+        </div>
+      </div>
+
+      <div class="about__map" aria-hidden="true">
+        <img src="img/karta-1.png" width="1581" height="995" alt="" loading="lazy">
+      </div>
+      <div class="about__fade" aria-hidden="true"></div>
+
+      <div class="about__why">
+        <h3 class="h3">Почему мы?</h3>
+        <ul class="dots">
+          <li>Работаем с&nbsp;архивами напрямую, а&nbsp;не&nbsp;по&nbsp;открытым базам в&nbsp;интернете</li>
+          <li>Не&nbsp;просто находим факты, а&nbsp;помогаем понять исторический контекст&nbsp;— почему переезжали, где венчались, как жили</li>
+          <li>Оформляем результат так, чтобы им можно было гордиться&nbsp;— не&nbsp;сухой отчёт, а&nbsp;родословная книга, которую хочется показать детям</li>
+          <li>Держим цены в&nbsp;доступном сегменте&nbsp;— качественная генеалогия не&nbsp;обязана быть роскошью</li>
+        </ul>
+      </div>
+
+      <div class="about__map2" aria-hidden="true">
+        <img src="img/karta-2.png" width="1581" height="995" alt="" loading="lazy">
+      </div>
+
+      <div class="about__process" id="process">
+        <h2 class="h2">Процесс работы</h2>
+        <ul class="dots">
+          <li>Связываемся с&nbsp;вами&nbsp;— оставляете заявку, обсуждаем задачу</li>
+          <li>Узнаём, что уже известно о&nbsp;семье&nbsp;— имена, даты, места проживания, даже отрывочные сведения</li>
+          <li>Ведём архивный поиск&nbsp;— изучаем документы, восстанавливаем историю рода</li>
+          <li>Оформляем результат&nbsp;— отчёт с&nbsp;расшифровками или родословная книга с&nbsp;древом</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ОТЗЫВЫ ============ -->
+    <section class="reviews container section" id="reviews">
+      <div class="section-head">
+        <h2 class="h2">Отзывы о&nbsp;нашей работе</h2>
+        <a class="link-more" href="#">Читать все на&nbsp;Авито&nbsp;→</a>
+      </div>
+      <div class="reviews__list scroller">
+        <article class="review">
+          <div>
+            <img class="review__stars" src="img/stars.svg" width="117" height="24" alt="Оценка 5 из 5">
+            <p class="review__text">Работа сделана очень быстро, качественно, по&nbsp;приятной цене, вежливый и&nbsp;честный человек, приятно с&nbsp;такими сотрудничать. Максимально довольна результатом, спасибо большое!!!</p>
+          </div>
+          <p class="review__author"><img src="img/person.svg" width="26" height="26" alt="">Юлия, Калуга</p>
+        </article>
+        <article class="review">
+          <div>
+            <img class="review__stars" src="img/stars.svg" width="117" height="24" alt="Оценка 5 из 5">
+            <p class="review__text">Знакомство с&nbsp;Глебом было предопределено кем‑то свыше, не&nbsp;иначе!)) Столько новых имен удалось узнать с&nbsp;его помощью&nbsp;— просто не&nbsp;перечесть! Там, куда я&nbsp;не&nbsp;знала как подступиться,</p>
+          </div>
+          <p class="review__author"><img src="img/person.svg" width="26" height="26" alt="">Ирина, Москва</p>
+        </article>
+        <article class="review">
+          <div>
+            <img class="review__stars" src="img/stars.svg" width="117" height="24" alt="Оценка 5 из 5">
+            <p class="review__text">Знакомство с&nbsp;Глебом было предопределено кем‑то свыше, не&nbsp;иначе!)) Столько новых имен удалось узнать с&nbsp;его помощью&nbsp;— просто не&nbsp;перечесть! Там, куда я&nbsp;не&nbsp;знала как подступиться...</p>
+          </div>
+          <p class="review__author"><img src="img/person.svg" width="26" height="26" alt="">Ирина, Москва</p>
+        </article>
+        <article class="review">
+          <div>
+            <img class="review__stars" src="img/stars.svg" width="117" height="24" alt="Оценка 5 из 5">
+            <p class="review__text">Спасибо за&nbsp;проделанную работу!! Генеалогическое древо очень понравилось!! Юбиляр прослезился, получив такой подарок!! В&nbsp;процессе работы замучила правками, спасибо за&nbsp;терпение!!</p>
+          </div>
+          <p class="review__author"><img src="img/person.svg" width="26" height="26" alt="">Валентина, Рязань</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ БЛОГ ============ -->
+    <section class="blog container section" id="blog">
+      <div class="section-head">
+        <h2 class="h2">Наш блог</h2>
+        <a class="link-more" href="https://vk.ru/russiagenealogy" target="_blank" rel="noopener">Читать наш блог в&nbsp;ВК&nbsp;→</a>
+      </div>
+      <!-- Посты из группы ВК. Здесь — снимок последних постов на 28.09.2026:
+           его видно, когда сайт открыт как файл. На хостинге js/main.js заменяет
+           карточки свежими постами из api/vk-posts.php (последний пост — большая карточка,
+           следующие три — справа сверху вниз). -->
+      <div class="blog__grid scroller" data-vk-blog="api/vk-posts.php">
+        <article class="post post--main">
+          <img class="post__img" src="https://sun9-57.vkuserphoto.ru/s/v1/ig2/vi1DBRthe_U-Eu406gLm0ZncodinImf2RdQdP_9PGj3OyPxVohfhkEpY28KJeD5R9xbN90BLUhEDaSgGPvS2iVWW.jpg?quality=95&amp;as=32x24,48x36,72x54,108x81,160x120,240x180,360x270,480x360,540x405,640x480,720x540,1080x810,1280x960,1440x1080&amp;from=bu&amp;u=MSmhdUww6Kh-TCCy1Ifwu7X7OXn09U9IX2xeTPh0aKM&amp;cs=1280x0" alt="Илья Репин (1844-1930)" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='img/blog-main.jpg'">
+          <div class="post__body">
+            <div class="post__texts">
+              <h3 class="post__title">Илья Репин (1844-1930)</h3>
+              <p class="post__desc">Родился в Чугуеве Харьковской губернии. Дед — Василий Ефимович Репин — неслуживый казак, владел постоялым двором и вёл торговлю. Умер в 1830-х годах. Отец — Ефим Васильевич Репин (1804-1894) после введения военных поселений в 1817 году получил статус &quot;военного поселянина&quot; (это звание считалось презренным среди чугуевцев-казаков). Занимался торговлей лошадьми — ежегодно ездил за 300 вёрст на Дон и пригонял табуны на…</p>
+            </div>
+            <a class="post__link" href="https://vk.com/wall-228395135_43" target="_blank" rel="noopener">Читать полностью →</a>
+          </div>
+        </article>
+        <div class="blog__side">
+          <article class="post post--side">
+            <img class="post__img" src="https://sun9-69.vkuserphoto.ru/s/v1/ig2/Y83wlDrvDAXhMMU_mG9PfY61jc-lctqte6tW2oxXUb-gIvLJqyfv0q-Rb9XVL3dJK7wE7ivwzG76tDXUY0aJ8l7K.jpg?quality=95&amp;as=32x24,48x36,72x54,108x81,160x120,240x180,360x270,480x360,540x405,640x480,720x540,1080x810,1280x960&amp;from=bu&amp;u=DBxXhdE_h_3-DjdANFr7Sgux7iU9BUq6dSL_967d4kE&amp;cs=640x0" alt="Бор, Боровичи, Борок, Боровая, Боровня…" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='img/blog-1.jpg'">
+            <div class="post__body">
+              <div class="post__texts">
+                <h3 class="post__title">Бор, Боровичи, Борок, Боровая, Боровня…</h3>
+                <p class="post__desc">Путешествуя по Новгородской области, можно встретить многочисленные населенные пункты, названия которых восходят к корню бор-. Если взглянуть на растительность в округе, часто интуитивно становится понятно, что эти названия – вариации на тему бора как соснового леса. И действительно, Новгородская область славится своими хвойными лесами: они занимают половину территории, а 28% этих лесов занимают именно сосны. Корень…</p>
+              </div>
+              <a class="post__link" href="https://vk.com/wall-228395135_42" target="_blank" rel="noopener">Читать полностью →</a>
+            </div>
+          </article>
+          <article class="post post--side">
+            <img class="post__img" src="https://sun9-13.vkuserphoto.ru/s/v1/ig2/TPhrwy9MR9Lus3qjxW_uJn6TqqkPaYybKADGPD8QEbB53gL-CzmnXpfdkepqUJHa0PXphmEpMydofq89Kxh3ZwW8.jpg?quality=95&amp;as=32x24,48x36,72x54,108x81,160x120,240x180,360x270,480x360,540x405,640x480,720x540,1080x810,1280x960,1440x1080&amp;from=bu&amp;u=vhwEHnwDRJWmstTHI713038aU4GB949NU6roz5zqOYI&amp;cs=640x0" alt="Когда держишь в руках старинный документ, первое чувство — трепет. Метрическая книга XVIII века, ревизская сказка, исповедная ведомость… Бумага пожелтела, чернила выцвели, а буквы — ну точно пляшут как хотят. И возникает вопрос: как это вообще читать? Мы в проекте «Древо Предков» расшифровываем такие рукописи каждый день. И сегодня покажем вам несколько секретов, которые помогут самостоятельно разобрать текст XVIII–XIX века. Поехали!" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='img/blog-2.jpg'">
+            <div class="post__body">
+              <div class="post__texts">
+                <h3 class="post__title">Когда держишь в руках старинный документ, первое чувство — трепет. Метрическая книга XVIII века, ревизская сказка, исповедная ведомость… Бумага пожелтела, чернила выцвели, а буквы — ну точно пляшут как хотят. И возникает вопрос: как это вообще читать? Мы в проекте «Древо Предков» расшифровываем такие рукописи каждый день. И сегодня покажем вам несколько секретов, которые помогут самостоятельно разобрать текст XVIII–XIX века. Поехали!</h3>
+                <p class="post__desc">Особенности почерков: от уставов до скорописи В XVIII–XIX веках почерки менялись. Если в XVII веке ещё встречался устав (буквы стояли ровно, как солдаты на параде), то позже в обиход вошла скоропись. Что это значит? — Буквы стали писаться слитно, с наклоном. — Появились выносные элементы — хвостики, завитки. — Одна и та же буква могла выглядеть по-разному.</p>
+              </div>
+              <a class="post__link" href="https://vk.com/wall-228395135_40" target="_blank" rel="noopener">Читать полностью →</a>
+            </div>
+          </article>
+          <article class="post post--side">
+            <img class="post__img" src="https://sun9-23.vkuserphoto.ru/s/v1/ig2/YWb3jC3WW3fZ70lcfDXVkipRxDRTKxERm_Io78vdp7DJU8pCMaiEVVm5M_qMs9lwxqyMTyOw386jStXNfG2NsLfv.jpg?quality=95&amp;as=32x24,48x36,72x54,108x81,160x120,240x180,360x270,480x360,540x405,640x480,720x540,1080x810,1280x960,1440x1080&amp;from=bu&amp;u=yVFAjkIFJ0VKnxijMuq-SH07NiXx2-yMan15Vcvuvig&amp;cs=640x0" alt="Продолжаем изучать места, где жили наши предки." loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='img/blog-3.jpg'">
+            <div class="post__body">
+              <div class="post__texts">
+                <h3 class="post__title">Продолжаем изучать места, где жили наши предки.</h3>
+                <p class="post__desc">А есть ли единая классификация топонимов? Их много, иногда они спорят между собой, поэтому мы не будем подробно останавливаться на громоздких классификациях лингвистов. На примере топонимов, образованных по природным признакам, а именно хвойного леса - бора, рассмотрим словообразование топонимов. Самый простой способ – прямой переход слова в топоним. Бывали в городке Бор, до которого можно добраться по канатной…</p>
+              </div>
+              <a class="post__link" href="https://vk.com/wall-228395135_39" target="_blank" rel="noopener">Читать полностью →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ КОНТАКТЫ ============ -->
+    <section class="contact container section" id="contact">
+      <div class="contact__inner">
+        <div class="contact__info">
+          <h2 class="h2 contact__title">Свяжитесь с&nbsp;нами и&nbsp;мы ответим на&nbsp;все ваши вопросы и&nbsp;проведем бесплатную первичную консультацию</h2>
+          <p class="contact__text">Оставьте сообщение на&nbsp;сайте или свяжитесь с&nbsp;нами в&nbsp;соц. сетях</p>
+          <div class="socials">
+            <a href="#" aria-label="WhatsApp"><img src="img/icons/whatsapp.svg" width="44" height="44" alt=""></a>
+            <a href="#" aria-label="Telegram"><img src="img/icons/telegram.svg" width="44" height="44" alt=""></a>
+            <a href="#" aria-label="ВКонтакте"><img src="img/icons/vk.svg" width="44" height="44" alt=""></a>
+            <a href="#" aria-label="MAX"><img src="img/icons/max.svg" width="44" height="44" alt=""></a>
+          </div>
+        </div>
+
+        <form class="form" action="#" method="post" novalidate>
+          <div class="form__fields">
+            <label class="visually-hidden" for="contact-field">Телефон, почта или мессенджер</label>
+            <input class="input" id="contact-field" name="contact" type="text" placeholder="Телефон, почта, мессенджер" autocomplete="tel" required>
+            <label class="visually-hidden" for="ancestors-field">Что известно о предках</label>
+            <textarea class="input input--area" id="ancestors-field" name="ancestors" placeholder="Что известно о предках (необязательно): имена, фамилии, места проживания"></textarea>
+            <label class="check">
+              <input type="checkbox" name="agree" required>
+              <span>Отправляя форму я&nbsp;принимаю <a href="#">политику конфиденциальности</a></span>
+            </label>
+          </div>
+          <button class="btn form__submit" type="submit">Отправить</button>
+          <p class="form__note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="footer__logo" href="#top" aria-label="Семейное древо — наверх">
+        <img src="img/logo.svg" width="33" height="37" alt="">
+      </a>
+      <img class="footer__watermark" src="img/logo.svg" alt="" aria-hidden="true">
+      <div class="footer__socials">
+        <a href="#" aria-label="WhatsApp"><img src="img/icons/whatsapp.svg" width="44" height="44" alt=""></a>
+        <a href="#" aria-label="Telegram"><img src="img/icons/telegram.svg" width="44" height="44" alt=""></a>
+        <a href="#" aria-label="ВКонтакте"><img src="img/icons/vk.svg" width="44" height="44" alt=""></a>
+        <a href="#" aria-label="MAX"><img src="img/icons/max.svg" width="44" height="44" alt=""></a>
+      </div>
+      <a class="footer__policy" href="#">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
